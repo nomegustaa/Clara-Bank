@@ -105,7 +105,7 @@ if(is_null($_SESSION['nome'])){
 
             <div class="saldo-principal">
 
-                <img src="src/imagens/saldo.png" alt="icone-cifrão" width="150px">
+                <img src="src/imagens/saldo.png" alt="icone-cifrão" width="100px">
                 <br>
                 <h1c class="h1">Consulte seu saldo</h1>
 
@@ -115,11 +115,8 @@ if(is_null($_SESSION['nome'])){
 
                     <p>Conta</p>
 
-                    <p class="valor" id="ocultar-saldo">R$ <span id="dinheiro">*****</span> Reais</p>
+                    <p class="valor" id="ocultar-saldo">R$ <span id="dinheiro">1500</span> Reais</p>
 
-
-                    <img src="src/imagens/olho.png" id="icone-fechado" class="icone-fechado" alt="icone-olho" width="30px">
-                    <img src="src/imagens/olho-aberto.png" id="icone-aberto" class="icone-aberto" alt="icone-olho" width="30px">
 
                     <p>Cartão de Crédito</p>
 
@@ -138,7 +135,7 @@ if(is_null($_SESSION['nome'])){
 
             <div class="extrato-principal" id="extrato-principal">
 
-                <img src="src/imagens/extrato.png" alt="icone-cifrão" width="150px">
+                <img src="src/imagens/extrato.png" alt="icone-cifrão" width="100px">
 
                 <h1>Extratro financeiro</h1>
 
@@ -216,7 +213,7 @@ if(is_null($_SESSION['nome'])){
 
             <div class="transferência-principal">
 
-                <img src="src/imagens/transferencia.png" alt="icone-cifrão" width="150px">
+                <img src="src/imagens/transferencia.png" alt="icone-cifrão" width="100px">
 
                 <h1>Relizar Transferência</h1>
 
@@ -368,12 +365,16 @@ if(is_null($_SESSION['nome'])){
                 <hr>
 
 
-                <button class="btn btn-transferir">Transferir</button>
-                <button class="btn btn-pix"> Pix copia e cola</button>
 
-                <br>
-                <button class="btn btn-qrcode">Ler QR code</button>
-                <button class="btn btn-cobrar">Cobrar</button>
+                <div class="btn-pix">
+                    <button class="btn btn-transferir">Transferir</button>
+                    <button class="btn btn-pix"> Pix copia e cola</button>
+    
+                    <br>
+                    <button class="btn btn-qrcode">Ler QR code</button>
+                    <button class="btn btn-cobrar">Cobrar</button>
+                </div>
+
 
 
 
@@ -404,7 +405,7 @@ if(is_null($_SESSION['nome'])){
 
             <div class="recarga-principal">
 
-                <img src="src/imagens/celular(claranet).png" alt="icone-cifrão" width="150px">
+                <img src="src/imagens/celular(claranet).png" alt="icone-cifrão" width="100px">
 
                 <h1>Recarregue seu celular</h1>
 
@@ -445,7 +446,7 @@ if(is_null($_SESSION['nome'])){
 
             <div class="suporte-principal">
 
-                <img src="src/imagens/transferencia.png" alt="icone-cifrão" width="150px">
+                <img src="src/imagens/transferencia.png" alt="icone-cifrão" width="100px">
 
                 <h1>Suporte</h1>
 
@@ -461,7 +462,7 @@ if(is_null($_SESSION['nome'])){
 
                     <input type="text" name="assunto_suporte" id="assunto_suporte" class="assunto_suporte" placeholder="Informe o assunto">
     
-                    <textarea name="caixa_suporte" id="caixa_suporte" class="caixa_suporte" cols="30" rows="10" placeholder="Escreva sua mensagem"></textarea>
+                    <textarea name="caixa_suporte" id="caixa_suporte" class="caixa_suporte" cols="15" rows="5" placeholder="Escreva sua mensagem"></textarea>
 
                     <button id="btn-suporte" class="btn_suporte">Enviar</button>
 

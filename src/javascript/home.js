@@ -1,5 +1,5 @@
-var usuario_img = document.getElementById('usuario-img');
-usuario_img.addEventListener('click', mudarTelaHome)
+var nome_cliente = document.getElementById('nome_cliente');
+nome_cliente.addEventListener('click', mudarTelaHome)
 
 var saldo = document.getElementById('saldo');
 saldo.addEventListener('click', mudarTelaSaldo)

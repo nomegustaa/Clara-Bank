@@ -1,49 +1,6 @@
 // saldo da minha conta
 saldo = 1500;
 
-
-
-var icone_fechado = document.getElementById("icone-fechado");
-var icone_aberto = document.getElementById('icone-aberto');
-
-
-icone_aberto.addEventListener('click', MostrarSaldo);
-icone_fechado.addEventListener('click', OcultarSaldo);
-
-
-function MostrarSaldo(){
-    var ocultardinheiro = document.getElementById('ocultar-saldo');
-    ocultardinheiro.innerHTML= `R$ ${saldo} Reais`
-
-    var icone_aberto = document.getElementById('icone-aberto');
-    var icone_fechado = document.getElementById("icone-fechado");
-    icone_aberto.style.display="none";
-    icone_fechado.style.display="inline"
-}
-
-
-function OcultarSaldo(){
-    var ocultardinheiro = document.getElementById('ocultar-saldo');
-    ocultardinheiro.innerHTML= `R$ ***** Reais`
-
-
-    var icone_aberto = document.getElementById('icone-aberto');
-    var icone_fechado = document.getElementById("icone-fechado");
-    
-    icone_fechado.style.display="none";
-    icone_aberto.style.display="inline";
-}
-
-
-
-
-
-
-
-
-
-
-
 // depositar para minha conta
 var botao_depositar = document.getElementById('depositar');
 botao_depositar.addEventListener('click', depositar)
