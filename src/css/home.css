@@ -909,19 +909,22 @@ input[type='file']{
 
 
     /* home */
-    .fundo{
+     .fundo{
         display: none;
         height: 50%;
         width: 100vw;
     }
+
+    
     .opcoes{
         text-align: center;
     }
+    
     .icone-menu{
         display: inline;
     }
     .icone-fechar{
-        margin: 10px 0;
+        margin: 15px 0;
     }
 
 
@@ -933,8 +936,6 @@ input[type='file']{
         font-size: 15px;
     }
 
-
-
     .area{
         display: none;
     }
@@ -943,7 +944,7 @@ input[type='file']{
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
+    } 
 
     .saldo-principal .valor {
         background-color: #34454E;
@@ -974,11 +975,10 @@ input[type='file']{
     }
     .transferencia-valores {
         display: flex;
-        flex-direction: column;
-        /* justify-content: center; */
+        flex-direction: column; 
+        justify-content: center;
         align-items: center;
     }
-
 
     /* deposito */
     .bancos_depositar, .contas_depositar {
@@ -996,7 +996,7 @@ input[type='file']{
 
     /* pix */
 
-    .btnM, .btn {
+     .btnM, .btn {
         padding: 10px;
         margin: 5px 15px 5px 0;
         width: 100%;
@@ -1006,8 +1006,9 @@ input[type='file']{
         font-size: 25px;
     }
 
-    /* recarga-celular */
+     /* recarga-celular */
 
+     
     .lista {
         margin: 0 0 10px 0;
         width: 100%;
@@ -1026,12 +1027,8 @@ input[type='file']{
         padding: 10px;
     }
 
-    .opcoes li:hover{
-        display: none;
-    }
 
-
-}
+} 
 
 @media screen and (max-width: 600px){
     .formulario_suporte, .caixa_suporte, .btn_suporte, .assunto_suporte,

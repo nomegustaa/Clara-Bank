@@ -23,9 +23,6 @@ var suporte = document.getElementById('suporte');
 suporte.addEventListener('click', mudarTelaSuporte);
 
 
-
-
-
 // função que vai para tela de consultar seu saldo
 function mudarTelaSaldo(){
     
@@ -230,7 +227,6 @@ recarga.addEventListener('click', menuRecarga);
 suporte.addEventListener('click', menuSuporte);
 sair.addEventListener('click', menuSair);
 nome_cliente.addEventListener('click', menuHome);
-
 
 
 
@@ -477,10 +473,10 @@ function AbrirMenu(){
     var fundo = document.getElementById('fundo');
     var icone_fechar = document.getElementById('icone-fechar');
 
-    fundo.style.display="inline";
 
     menu.style.display="none";
     icone_fechar.style.display="inline";
+    fundo.style.display="inline";
     fundo.style.animation="menu 0.5s normal 1";
 
 }
@@ -496,9 +492,8 @@ function FecharMenu(){
     var fundo = document.getElementById('fundo');
     var icone_fechar = document.getElementById('icone-fechar');
 
-    menu.style.display="inline";
     icone_fechar.style.display="none";
     fundo.style.display="none";
-
+    menu.style.display="inline";
     menu.style.animation="menu-icone 0.5s normal 1"
 }
