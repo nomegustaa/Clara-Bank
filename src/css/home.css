@@ -11,7 +11,7 @@
 main{
     display: flex;
     justify-content: space-between;
-    font-family: 'claranet';
+    font-family: 'claranet', sans-serif;
 }
 
 
@@ -20,9 +20,10 @@ main{
     height: 100vh;
     width: 20%;
     background-color: #e00000;
-    
 }
-
+.icone-menu, .icone-fechar{
+    display: none;
+}
 .menu{
     text-align: center;
 }
@@ -106,7 +107,7 @@ input[type='file']{
 .texto-fundo{
     display: none;
     height: 100vh;
-    width: 80%;
+    width: 70%;
 }
 
 .texto-principal{
@@ -707,33 +708,6 @@ input[type='file']{
     cursor: pointer;
 }
 
-/* responsividade suporte*/
-
-@media screen and (max-width: 1400px){
-    .formulario_suporte, .caixa_suporte, .btn_suporte, .assunto_suporte,
-    .email_suporte, .nome_suporte{
-    /* margin: 0 100px 100px 100px; */
-    }
-
-}
-
-@media screen and (max-width: 1000px){
-    .formulario_suporte, .caixa_suporte, .btn_suporte, .assunto_suporte,
-    .email_suporte, .nome_suporte{
-    margin: 0 50px 0 50px;
-    }
-
-}
-
-@media screen and (max-width: 600px){
-    .formulario_suporte, .caixa_suporte, .btn_suporte, .assunto_suporte,
-    .email_suporte, .nome_suporte{
-    margin: 0 10px 0 0;
-    }
-
-}
-
-
 
 /* animação */
 
@@ -933,13 +907,152 @@ input[type='file']{
 
 @media screen and (max-width: 700px){
 
+
+    /* home */
     .fundo{
+        display: none;
+        height: 50%;
+        width: 100vw;
+    }
+    .opcoes{
+        text-align: center;
+    }
+    .icone-menu{
+        display: inline;
+    }
+    .icone-fechar{
+        margin: 10px 0;
+    }
+
+    @keyframes menu{
+        0%{
+            width: 0%;
+        }
+        100%{
+            width: 100vw;
+        }
+    }
+
+
+    @keyframes menu-icone{
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(180deg);
+        }
+    }
+
+
+    .texto-principal h1{
+        font-size: 20px;
+        margin: 0 0 40px 0;
+    }
+    .texto-principal p{
+        font-size: 15px;
+    }
+
+
+
+    .area{
         display: none;
     }
 
     main{
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .saldo-principal .valor {
+        background-color: #34454E;
+        margin: 1px 40% 0 30%;
+        padding: 5px;
+        color: #fff;
+        width: 50%;
+    }
+
+
+    /* extrato */
+    .fundo-compra1, .fundo-compra3, .fundo-compra5, .fundo-compra7, 
+    .fundo-compra2, .fundo-compra4, .fundo-compra6 {
+        display: flex;
+        justify-content: space-around;
+        margin: 10px;
+        background-color: #34454E;
+        padding: 10px;
+        color: #fff;
+        font-size: 10px;
+    }
+
+    /* transferencia */
+    .bancos_transferencia{
+        font-size: 15px;
+        padding: 10px 50px;
+        margin: 2px 0px;
+    }
+    .transferencia-valores {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+    }
+
+
+    /* deposito */
+    .bancos_depositar, .contas_depositar {
+        font-size: 15px;
+        padding: 10px 50px;
+        margin: 2px 0px;
+    }
+    .depositar-valores {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
+    /* pix */
+
+    .btnM, .btn {
+        padding: 10px;
+        margin: 5px 15px 5px 0;
+        width: 100%;
+    }
+
+    .pix-principal h1 {
+        font-size: 25px;
+    }
+
+    /* recarga-celular */
+
+    .lista {
+        margin: 0 0 10px 0;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .valor, .numero {
+        padding: 10px;
+        width: 92%;
+        margin: 10px 0 10px 0;
+    }
+
+    .btn-enviar {
+        margin-top: 25px;
+        width: 100%;
+        padding: 10px;
+    }
+
+
+
+}
+
+@media screen and (max-width: 600px){
+    .formulario_suporte, .caixa_suporte, .btn_suporte, .assunto_suporte,
+    .email_suporte, .nome_suporte{
+        margin: 10px 0px 10px 0;
     }
 
 }

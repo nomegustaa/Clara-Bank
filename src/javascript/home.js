@@ -415,3 +415,44 @@ file.addEventListener('change', (event) =>{
 
     leitor.readAsDataURL(file.files[0]);
 })
+
+
+
+// menu Hambúrguer
+
+var menu = document.getElementById('icone-menu');
+
+menu.addEventListener('click', AbrirMenu);
+
+function AbrirMenu(){
+    
+
+    var fundo = document.getElementById('fundo');
+    var icone_fechar = document.getElementById('icone-fechar');
+
+    fundo.style.display="inline";
+
+    menu.style.display="none";
+    icone_fechar.style.display="inline";
+    fundo.style.animation="menu 0.5s normal 1";
+
+}
+
+
+var icone_fechar = document.getElementById('icone-fechar');
+
+icone_fechar.addEventListener('click', FecharMenu)
+
+function FecharMenu(){
+    
+
+    var fundo = document.getElementById('fundo');
+    var icone_fechar = document.getElementById('icone-fechar');
+
+    menu.style.display="inline";
+    icone_fechar.style.display="none";
+    fundo.style.display="none";
+
+    menu.style.animation="menu-icone 0.5s normal 1"
+
+}
