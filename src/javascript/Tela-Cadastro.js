@@ -11,7 +11,7 @@ var input_email = document.getElementById('email');
 input_email.addEventListener("focusout", validar_formulario)
 
 var input_senha = document.getElementById('senha');
-input_senha.addEventListener("mouseout", validar_formulario)
+input_senha.addEventListener("focusout", validar_formulario)
 
 var botao_cadastro = document.getElementById("botao-cadastro");
 

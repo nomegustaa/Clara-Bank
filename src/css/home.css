@@ -30,7 +30,7 @@ main{
 
 .fundo .menu p{
     color: #fff;
-    margin: 30px 0 30px 0;
+    margin: 15px 0 15px 0;
     font-size: 20px;
 }
 
@@ -38,8 +38,8 @@ main{
     cursor: pointer;
     border: 1px solid rgb(255, 255, 255);
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
 }
 
 input[type='file']{
@@ -53,7 +53,7 @@ input[type='file']{
 }
 
 .opcoes li{
-    margin: 15px 0 15px 0;
+    margin: 10px 0 10px 0;
     padding: 10px 0 10px 0;
     color: #fff;
     list-style-type: none;
@@ -105,7 +105,7 @@ input[type='file']{
 
 /* texto principal home */
 .texto-fundo{
-    display: none;
+    display: inline;
     height: 100vh;
     width: 70%;
 }
@@ -129,7 +129,7 @@ input[type='file']{
 
 /* texto principal saldo */
 .saldo-fundo{
-    display: inline;
+    display: none;
     height: 100vh;
     width: 70%;
 }
@@ -924,25 +924,6 @@ input[type='file']{
         margin: 10px 0;
     }
 
-    @keyframes menu{
-        0%{
-            width: 0%;
-        }
-        100%{
-            width: 100vw;
-        }
-    }
-
-
-    @keyframes menu-icone{
-        0%{
-            transform: rotate(0deg);
-        }
-        100%{
-            transform: rotate(180deg);
-        }
-    }
-
 
     .texto-principal h1{
         font-size: 20px;
@@ -1045,6 +1026,9 @@ input[type='file']{
         padding: 10px;
     }
 
+    .opcoes li:hover{
+        display: none;
+    }
 
 
 }
@@ -1055,4 +1039,25 @@ input[type='file']{
         margin: 10px 0px 10px 0;
     }
 
+}
+
+
+
+@keyframes menu{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100vw;
+    }
+}
+
+
+@keyframes menu-icone{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(180deg);
+    }
 }

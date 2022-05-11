@@ -1,26 +1,29 @@
 var nome_cliente = document.getElementById('nome_cliente');
-nome_cliente.addEventListener('click', mudarTelaHome)
+nome_cliente.addEventListener('click', mudarTelaHome);
 
 var saldo = document.getElementById('saldo');
-saldo.addEventListener('click', mudarTelaSaldo)
+saldo.addEventListener('click', mudarTelaSaldo);
 
 var extrato = document.getElementById('extrato');
-extrato.addEventListener('click', mudarTelaExtrato)
-
-var pix = document.getElementById('pix');
-pix.addEventListener('click', mudarTelaPix)
-
-var recarga = document.getElementById('recarga');
-recarga.addEventListener('click', mudarTelaRecarga)
-
-var suporte = document.getElementById('suporte');
-suporte.addEventListener('click', mudarTelaSuporte)
-
-var deposito = document.getElementById('deposito');
-deposito.addEventListener('click', mudarTelaDeposito)
+extrato.addEventListener('click', mudarTelaExtrato);
 
 var transferencia = document.getElementById('transferencia');
-transferencia.addEventListener('click', mudarTelaTransferencia)
+transferencia.addEventListener('click', mudarTelaTransferencia);
+
+var deposito = document.getElementById('deposito');
+deposito.addEventListener('click', mudarTelaDeposito);
+
+var pix = document.getElementById('pix');
+pix.addEventListener('click', mudarTelaPix);
+
+var recarga = document.getElementById('recarga');
+recarga.addEventListener('click', mudarTelaRecarga);
+
+var suporte = document.getElementById('suporte');
+suporte.addEventListener('click', mudarTelaSuporte);
+
+
+
 
 
 // função que vai para tela de consultar seu saldo
@@ -226,9 +229,34 @@ pix.addEventListener('click', menuPix);
 recarga.addEventListener('click', menuRecarga);
 suporte.addEventListener('click', menuSuporte);
 sair.addEventListener('click', menuSair);
+nome_cliente.addEventListener('click', menuHome);
 
 
 
+
+
+function menuHome(){
+    var saldo = document.getElementById('saldo');
+    var extrato = document.getElementById('extrato');
+    var transferencia = document.getElementById('transferencia');
+    var deposito = document.getElementById('deposito');
+    var pix = document.getElementById('pix');
+    var recarga = document.getElementById('recarga');
+    var suporte = document.getElementById('suporte');
+    var sair = document.getElementById('sair');
+    var nome_cliente = document.getElementById('nome_cliente');
+
+
+    saldo.style.borderLeft="none";
+    extrato.style.borderLeft="none";
+    transferencia.style.borderLeft="none";
+    deposito.style.borderLeft="none";
+    pix.style.borderLeft="none";
+    recarga.style.borderLeft="none";
+    suporte.style.borderLeft="none";
+    sair.style.borderLeft="none";
+    nome_cliente.style.borderLeft="5px solid #fff"
+}
 function menuSaldo(){
     var saldo = document.getElementById('saldo');
     var extrato = document.getElementById('extrato');
@@ -238,9 +266,11 @@ function menuSaldo(){
     var recarga = document.getElementById('recarga');
     var suporte = document.getElementById('suporte');
     var sair = document.getElementById('sair');
+    var nome_cliente = document.getElementById('nome_cliente');
 
 
-    saldo.style.borderLeft="5px solid #fff";
+
+
     extrato.style.borderLeft="none";
     transferencia.style.borderLeft="none";
     deposito.style.borderLeft="none";
@@ -248,6 +278,8 @@ function menuSaldo(){
     recarga.style.borderLeft="none";
     suporte.style.borderLeft="none";
     sair.style.borderLeft="none";
+    nome_cliente.style.borderLeft="none"
+    saldo.style.borderLeft="5px solid #fff";
 }
 
 function menuExtrato(){
@@ -259,18 +291,21 @@ function menuExtrato(){
     var recarga = document.getElementById('recarga');
     var suporte = document.getElementById('suporte');
     var sair = document.getElementById('sair');
+    var nome_cliente = document.getElementById('nome_cliente');
+
+
 
 
     saldo.style.borderLeft="none";
-    extrato.style.borderLeft="5px solid #fff";
+
     transferencia.style.borderLeft="none";
     deposito.style.borderLeft="none";
     pix.style.borderLeft="none";
     recarga.style.borderLeft="none";
     suporte.style.borderLeft="none";
     sair.style.borderLeft="none";
-
-    
+    nome_cliente.style.borderLeft="none";
+    extrato.style.borderLeft="5px solid #fff";
    
 }
 
@@ -283,15 +318,17 @@ function menuTransferencia(){
     var recarga = document.getElementById('recarga');
     var suporte = document.getElementById('suporte');
     var sair = document.getElementById('sair');
+    var nome_cliente = document.getElementById('nome_cliente');
 
     saldo.style.borderLeft="none";
     extrato.style.borderLeft="none";
-    transferencia.style.borderLeft="5px solid #fff";
     deposito.style.borderLeft="none";
     pix.style.borderLeft="none";
     recarga.style.borderLeft="none";
     suporte.style.borderLeft="none";
     sair.style.borderLeft="none";
+    nome_cliente.style.borderLeft="none";
+    transferencia.style.borderLeft="5px solid #fff";
 
     
 }
@@ -305,15 +342,17 @@ function menuDeposito(){
     var recarga = document.getElementById('recarga');
     var suporte = document.getElementById('suporte');
     var sair = document.getElementById('sair');
+    var nome_cliente = document.getElementById('nome_cliente');
 
     saldo.style.borderLeft="none";
     extrato.style.borderLeft="none";
     transferencia.style.borderLeft="none";
-    deposito.style.borderLeft="5px solid #fff";
     pix.style.borderLeft="none";
     recarga.style.borderLeft="none";
     suporte.style.borderLeft="none";
     sair.style.borderLeft="none";
+    nome_cliente.style.borderLeft="none";
+    deposito.style.borderLeft="5px solid #fff";
 }
 
 function menuPix(){
@@ -325,15 +364,17 @@ function menuPix(){
     var recarga = document.getElementById('recarga');
     var suporte = document.getElementById('suporte');
     var sair = document.getElementById('sair');
+    var nome_cliente = document.getElementById('nome_cliente');
 
     saldo.style.borderLeft="none";
     extrato.style.borderLeft="none";
     transferencia.style.borderLeft="none";
     deposito.style.borderLeft="none";
-    pix.style.borderLeft="5px solid #fff";
     recarga.style.borderLeft="none";
     suporte.style.borderLeft="none";
     sair.style.borderLeft="none";
+    nome_cliente.style.borderLeft="none";
+    pix.style.borderLeft="5px solid #fff";
 }
 
 function menuRecarga(){
@@ -345,15 +386,17 @@ function menuRecarga(){
     var pix = document.getElementById('pix');
     var suporte = document.getElementById('suporte');
     var sair = document.getElementById('sair');
+    var nome_cliente = document.getElementById('nome_cliente');
 
     saldo.style.borderLeft="none";
     extrato.style.borderLeft="none";
     transferencia.style.borderLeft="none";
     deposito.style.borderLeft="none";
     pix.style.borderLeft="none";
-    recarga.style.borderLeft="5px solid #fff";
     suporte.style.borderLeft="none";
     sair.style.borderLeft="none";
+    nome_cliente.style.borderLeft="none";
+    recarga.style.borderLeft="5px solid #fff";
 }
 
 function menuSuporte(){
@@ -365,6 +408,7 @@ function menuSuporte(){
     var pix = document.getElementById('pix');
     var recarga = document.getElementById('recarga');
     var sair = document.getElementById('sair');
+    var nome_cliente = document.getElementById('nome_cliente');
 
     saldo.style.borderLeft="none";
     extrato.style.borderLeft="none";
@@ -372,8 +416,9 @@ function menuSuporte(){
     deposito.style.borderLeft="none";
     pix.style.borderLeft="none";
     recarga.style.borderLeft="none";
-    suporte.style.borderLeft="5px solid #fff";
     sair.style.borderLeft="none";
+    nome_cliente.style.borderLeft="none";
+    suporte.style.borderLeft="5px solid #fff";
 }
 
 function menuSair(){
@@ -385,6 +430,7 @@ function menuSair(){
     var pix = document.getElementById('pix');
     var recarga = document.getElementById('recarga');
     var suporte = document.getElementById('suporte');
+    var nome_cliente = document.getElementById('nome_cliente');
 
     saldo.style.borderLeft="none";
     extrato.style.borderLeft="none";
@@ -393,6 +439,7 @@ function menuSair(){
     pix.style.borderLeft="none";
     recarga.style.borderLeft="none";
     suporte.style.borderLeft="none";
+    nome_cliente.style.borderLeft="none";
     sair.style.borderLeft="5px solid #fff";
 }
 
@@ -454,5 +501,4 @@ function FecharMenu(){
     fundo.style.display="none";
 
     menu.style.animation="menu-icone 0.5s normal 1"
-
 }
