@@ -100,8 +100,9 @@ input[type='file']{
 
 
 
-
-
+.logo{
+    margin-top: 100px;
+}
 
 /* texto principal home */
 .texto-fundo{
@@ -902,11 +903,20 @@ input[type='file']{
         width: 80px;
         height: 80px;
     }
+    .logo{
+        margin-top: 100px;
+        width: 300px;
+    }
 }
 
 
 @media screen and (max-width: 700px){
 
+
+    .logo{
+        margin-top: 100px;
+        width: 200px;
+    }
 
     /* home */
      .fundo{
@@ -1034,6 +1044,11 @@ input[type='file']{
     .formulario_suporte, .caixa_suporte, .btn_suporte, .assunto_suporte,
     .email_suporte, .nome_suporte{
         margin: 10px 0px 10px 0;
+    }
+
+    .logo{
+        margin-top: 100px;
+        width: 150px;
     }
 
 }
