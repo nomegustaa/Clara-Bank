@@ -414,7 +414,7 @@ function menuSuporte(){
     recarga.style.borderLeft="none";
     sair.style.borderLeft="none";
     nome_cliente.style.borderLeft="none";
-    suporte.style.borderLeft="5px solid #fff";
+    suporte.style.borderRight="5px solid #fff";
 }
 
 function menuSair(){

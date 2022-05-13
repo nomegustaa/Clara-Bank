@@ -12,6 +12,7 @@ main{
     display: flex;
     justify-content: space-between;
     font-family: 'claranet', sans-serif;
+    background: #34454E;
 }
 
 
@@ -28,6 +29,10 @@ main{
     text-align: center;
 }
 
+.menu .opcoes{
+    text-align: left;
+    padding-left: 15px;
+}
 .fundo .menu p{
     color: #fff;
     margin: 15px 0 15px 0;
@@ -159,10 +164,10 @@ input[type='file']{
 }
 
 .saldo-principal .valor{
-    background-color: #34454E;
+    background-color: #fff;
     margin: 1px 40% 0 30%; /*perdão pela gambiarra*/
     padding: 5px;
-    color: #fff;
+    color: #008000;
     width: 30%;
 }
 
@@ -207,27 +212,19 @@ input[type='file']{
 }
 
 .fundo-compra1,
+.fundo-compra2,
 .fundo-compra3,
+.fundo-compra4,
 .fundo-compra5,
+.fundo-compra6,
 .fundo-compra7{
     display: flex;
     justify-content: space-between;
     margin: 10px 20% 10px 20%;
-    background-color: #34454E;
+    background-color: #fff;
     padding: 10px;
-    color: #fff;
+    color: #34454E;
     font-size: 15px;
-}
-
-.fundo-compra2,
-.fundo-compra4,
-.fundo-compra6{
-    display: flex;
-    justify-content: space-between;
-    margin: 0 15% 0 15%;
-    background-color: #34454E;
-    padding: 10px;
-    color: #fff;
 }
 
 
@@ -710,194 +707,6 @@ input[type='file']{
 }
 
 
-/* animação */
-
-.area {
-    position: absolute;
-    background: transparent;
-    background: -webkit-linear-gradient(to left, #e00000, #E21A22);
-    width: 95%;
-    height: 100vh;
-    z-index:-1;
-}
-
-.circles {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-
-}
-
-.circles li {
-    position: absolute;
-    display: block;
-    list-style: none;
-    width: 20px;
-    height: 20px;
-    background: linear-gradient(55deg, #e00000, #E21A22);;
-    animation: animate 25s linear infinite;
-    bottom: -150px;
-    left: 500px;
-    font-size: 15px;
-    color: #fff;
-    font-family: 'claranet', sans-serif;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.circles li:nth-child(1) {
-    left: 30%;
-    width: 50px;
-    height: 50px;
-    animation-delay: 3s;
-}
-
- .circles li:nth-child(2) {
-    left: 50%;
-    width: 30px;
-    height: 30px;
-    animation-delay: 7s;
-    animation-duration: 12s;
-}
-
-
-.circles li:nth-child(3) {
-    left: 70%;
-    width: 40px;
-    height: 40px;
-    animation-delay: 12s;
-    animation-duration: 16s;
-}
-
-
-.circles li:nth-child(4) {
-    left: 40%;
-    width: 60px;
-    height: 60px;
-    animation-delay: 0s;
-    animation-duration: 18s;
-}
-
-
-.circles li:nth-child(5) {
-    left: 65%;
-    width: 50px;
-    height: 50px;
-    animation-delay: 4s;
-}
-
-
-.circles li:nth-child(6) {
-    left: 75%;
-    width: 70px;
-    height: 70px;
-    animation-delay: 3s;
-}
-
-
-
-.circles li:nth-child(7) {
-    left: 90%;
-    width: 80px;
-    height: 80px;
-    animation-delay: 7s;
-    animation-duration: 30s;
-}
-
-
-.circles li:nth-child(8) {
-    left: 80%;
-    width: 5px;
-    height: 5px;
-    animation-delay: 5s;
-    animation-duration: 22s;
-}
-
-
-.circles li:nth-child(9) {
-    left: 83%;
-    width: 90px;
-    height: 90px;
-    animation-delay: 2s;
-    animation-duration: 35s;
-}
-
-
-.circles li:nth-child(10) {
-    left: 54%;
-    width: 50px;
-    height: 50px;
-    animation-delay: 0s;
-    animation-duration: 11s;
-}
-
-
-.circles li:nth-child(11) {
-    left: 22%;
-    width: 45px;
-    height: 45px;
-    animation-delay: 0s;
-    animation-duration: 15s;
-}
-
-
-.circles li:nth-child(12) {
-    left: 97%;
-    width: 50px;
-    height: 50px;
-    animation-delay: 2s;
-    animation-duration: 30s;
-}
-
-
-.circles li:nth-child(13) {
-    left: 60%;
-    width: 40px;
-    height: 40px;
-    animation-delay: 0s;
-    animation-duration: 15s;
-}
-
-
-.circles li:nth-child(14) {
-    left: 21%;
-    width: 50px;
-    height: 50px;
-    animation-delay: 2s;
-    animation-duration: 28s;
-}
-
-
-.circles li:nth-child(15) {
-    left: 44%;
-    width: 50px;
-    height: 50px;
-    animation-delay: 1s;
-    animation-duration: 15s;
-} 
-
-
-@keyframes animate {
-    0% {
-        transform: translateY(0) rotate(0deg);
-        opacity: 1;
-        border-radius: 0;
-    }
-    100% {
-        transform: translateY(-1000px) rotate(720deg);
-        opacity: 0;
-        border-radius: 50%;
-    }
-}
-
-
-
 @media(max-width: 900px){
     .usuario-img{
         width: 80px;
@@ -944,10 +753,6 @@ input[type='file']{
     }
     .texto-principal p{
         font-size: 15px;
-    }
-
-    .area{
-        display: none;
     }
 
     main{
